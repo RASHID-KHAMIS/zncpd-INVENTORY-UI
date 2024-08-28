@@ -1,0 +1,73 @@
+<aside class="main-sidebar">
+
+    <section class="sidebar">
+      <ul class="sidebar-menu">
+        <!-- <li class="header">MAIN NAVIGATION</li> -->
+
+        <li class="active treeview">
+          <a routerLink="/home">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-bank"></i>
+            <span>Asset Registration</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/fixed-asset"><i class="fa fa-circle-o"></i>Fixed Asset</a></li>
+            <li><a routerLink="/non-fixed-asset"><i class="fa fa-circle-o"></i> Non Fixed Asset</a></li>
+            <li><a routerLink="/other-asset"><i class="fa fa-circle-o"></i> Other Asset</a></li>
+          
+          </ul>
+        </li>
+        <li>
+          <a  routerLink="/asset-in-store">
+            <i class="fa fa-th"></i> <span>Asset in Store</span> 
+            <!-- <small class="label pull-right bg-green">new</small> -->
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Inventory</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="purchase"><i class="fa fa-circle-o"></i> Purchase</a></li>
+            <li><a routerLink="sales"><i class="fa fa-circle-o"></i> Sales</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Regular Maintenance</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="location"><i class="fa fa-circle-o"></i> Location</a></li>
+            <li><a routerLink="supplier"><i class="fa fa-circle-o"></i> Supplier</a></li>
+            <li><a routerLink="customer"><i class="fa fa-circle-o"></i> Customer</a></li>
+            <li><a routerLink="store"><i class="fa fa-circle-o"></i> Store</a></li>
+
+          </ul>
+        </li>
+        <mat-divider style="color: white;"></mat-divider>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cogs"></i> <span>Configuration</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a routerLink="system-configuration"><i class="fa fa-circle-o"></i> System Configuration</a></li>
+            <li><a routerLink="asset-configuration"><i class="fa fa-circle-o"></i> Asset Configuration</a></li>
+            <li><a routerLink="inventory-configuration"><i class="fa fa-circle-o"></i> Inventory Configuration</a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+  </aside>

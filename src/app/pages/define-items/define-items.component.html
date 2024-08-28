@@ -1,0 +1,53 @@
+<div class="content-wrapper">
+
+    <br><br>
+
+    <section class="content-header">
+        <h1>
+            Define Items
+        </h1>
+        <ol class="breadcrumb">
+            <div class="card-actions">
+                <button mat-raised-button color="primary" style="float: right;margin-left: 30%;"
+                    (click)="onBack()">Back</button>
+            </div>
+        </ol>
+    </section>
+    <br>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                    </div>
+                    <app-card>
+                        <mat-tab-group>
+                            <mat-tab label="Main Category"> <br><br>
+                                <app-main-category></app-main-category>
+                            </mat-tab>
+                            <mat-tab label="Category"> <br><br>
+                                <app-category></app-category>
+                            </mat-tab>
+                            <mat-tab label="Status"> <br><br>
+                                <app-status></app-status>
+                            </mat-tab>
+                            <mat-tab label="Condition"> <br><br>
+                                <app-condition></app-condition>
+                            </mat-tab>
+                            <mat-tab label="Utilization"> <br><br>
+                                <app-utilization></app-utilization>
+                            </mat-tab>
+                            <mat-tab label="Manual"> <br><br>
+                                <app-manual></app-manual>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </app-card>
+                </div>
+            </div><!-- /.col -->
+        </div><!-- ./row -->
+
+    </section><!-- /.content -->
+</div>

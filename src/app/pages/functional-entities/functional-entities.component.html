@@ -1,0 +1,50 @@
+<div class="content-wrapper">
+
+    <br><br>
+
+    <section class="content-header">
+        <h1>
+            Functional Entities
+        </h1>
+        <ol class="breadcrumb">
+            <div class="card-actions">
+                <button mat-raised-button color="primary" style="float: right;margin-left: 30%;"
+                    (click)="onBack()">Back</button>
+            </div>
+        </ol>
+    </section>
+    <br>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                    </div>
+                    <app-card>
+                        <mat-tab-group>
+                            <mat-tab label="Manufacturer"> <br><br>
+                                <app-manufacturer></app-manufacturer>
+                            </mat-tab>
+                            <mat-tab label="Vendor"> <br><br>
+                                <app-vendor></app-vendor>
+                            </mat-tab>
+                            <mat-tab label="Sponsor"> <br><br>
+                                <app-sponsor></app-sponsor>
+                            </mat-tab>
+                            <mat-tab label="Service Provider"> <br><br>
+                                <app-service-provider></app-service-provider>
+                            </mat-tab>
+                            <mat-tab label="Item User"> <br><br>
+                                <app-item-user></app-item-user>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </app-card>
+                </div>
+            </div><!-- /.col -->
+        </div><!-- ./row -->
+
+    </section><!-- /.content -->
+</div>

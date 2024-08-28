@@ -1,0 +1,47 @@
+<div class="content-wrapper">
+
+    <br><br>
+
+    <section class="content-header">
+        <h1>
+            Organizational Entities
+        </h1>
+        <ol class="breadcrumb">
+            <div class="card-actions">
+                <button mat-raised-button color="primary" style="float: right;margin-left: 30%;"
+                    (click)="onBack()">Back</button>
+            </div>
+        </ol>
+    </section>
+    <br>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                    </div>
+                    <app-card>
+                        <mat-tab-group>
+                            <mat-tab label="Facility"> <br><br>
+                                <app-facility></app-facility>
+                            </mat-tab>
+                            <mat-tab label="Sub-Facilty"> <br><br>
+                                <app-sub-facility></app-sub-facility>
+                            </mat-tab>
+                            <mat-tab label="Room-Type"> <br><br>
+                                <app-room-type></app-room-type>
+                            </mat-tab>
+                            <mat-tab label="Room"> <br><br>
+                                <app-room></app-room>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </app-card>
+                </div>
+            </div><!-- /.col -->
+        </div><!-- ./row -->
+
+    </section><!-- /.content -->
+</div>

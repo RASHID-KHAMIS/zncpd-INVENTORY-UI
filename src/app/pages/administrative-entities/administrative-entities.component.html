@@ -1,0 +1,49 @@
+<div class="content-wrapper">
+     
+    <br><br>
+ 
+         <section class="content-header">
+             <h1>
+              Administrative Entities
+             </h1>
+             <ol class="breadcrumb">
+              <div class="card-actions">
+                <button mat-raised-button color="primary" style="float: right;margin-left: 30%;" (click)="onBack()">Back</button>
+            </div>
+             </ol>
+           </section>
+           <br>
+   
+           <!-- Main content -->
+           <section class="content">
+   
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="box box-primary">
+                   <div class="box-header">
+                   </div>
+                <app-card >
+                    <mat-tab-group>
+                      <mat-tab  label="Organization"> <br><br>
+                        <app-organization></app-organization>
+                       </mat-tab>
+                        <mat-tab  label="Shehia"> <br><br>
+                          <app-shehia></app-shehia>
+                        </mat-tab>
+                        <mat-tab  label="District"> <br><br>
+                            <app-district></app-district>
+                          </mat-tab>
+                          <mat-tab  label="Region"> <br><br>
+                            <app-region></app-region>
+                          </mat-tab>
+                        <mat-tab  label="Zone"> <br><br>
+                         <app-zone></app-zone>
+                        </mat-tab>
+                      </mat-tab-group>
+                </app-card>
+                 </div>
+               </div><!-- /.col -->
+             </div><!-- ./row -->
+      
+           </section><!-- /.content -->
+       </div>
